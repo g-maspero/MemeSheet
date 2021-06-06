@@ -119,6 +119,10 @@ nav {
     width: 500px;
 }
 
+.navList a:hover {
+    text-decoration: underline;
+}
+
 .navListItem {
     display: inline-block;
     width: 25%;
