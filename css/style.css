@@ -230,7 +230,7 @@ main {
     z-index: -1;
     padding-top: 16px;
     padding-right: 16px;
-    padding-left: 16px;
+    padding-left: 40px;
     padding-bottom: 16px;
 }
 
@@ -241,8 +241,8 @@ main {
 }
 
 .categoryImg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     transition: transform .2s;
 }
@@ -254,7 +254,7 @@ main {
 .categoryTitle {
     color: #f8f7f9;
     font-family:'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: lighter;
     text-decoration: none;
@@ -274,8 +274,8 @@ main {
 }
 
 .memeImage {
-    width: 300px;
-    height: 300px;
+    width: 420px;
+    height: 420px;
 }
 
 .memePoints {
@@ -300,7 +300,7 @@ main {
 .memeComment {
     color: #f8f7f9;
     font-family:'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: lighter;
     padding-left: 5px;
