@@ -57,6 +57,12 @@ h3 {
     ;
 }
 
+.form-container {
+    background-color: #f8f7f9;
+    font-family:'Source Sans Pro', sans-serif;
+    color: #2b2d42;
+}
+
 header {
     grid-area: header;
     position: sticky;
