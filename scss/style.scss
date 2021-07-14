@@ -1,6 +1,375 @@
-p {
-    background-color: black;
-    div {
-        color: blanchedalmond;
-    }
+/*
+            Paleta de colores
+
+    - #2b2d42
+    - #92dce5
+    - #f8f7f9
+    - #f7ec59
+    - #ff66d8
+
+    https://coolors.co/2b2d42-92dce5-f8f7f9-f7ec59-ff66d8
+*/
+
+$cool-dark: #2b2d42;
+$cool-light: #f8f7f9;
+$cool-font: 'Source Sans Pro', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $cool-dark;
+}
+
+a { 
+    color: inherit;
+} 
+
+h1 {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2 {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+h3 {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "footer footer footer footer footer footer "
+    ;
+}
+
+.form-container {
+    background-color: $cool-light;
+    font-family:$cool-font;
+    color: $cool-dark;
+}
+
+.sections-carousel {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.carousel-inner{
+    width:100%;
+    max-height: 200px !important;
+  }
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    background-color: $cool-dark;
+    box-shadow: 0px 1px 10px 1px $cool-light;
+}
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid $cool-light;
+    padding: 16px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoImg {
+    height: 40px;
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoImg:hover {
+    transform: rotateZ(360deg) scale(1.4);
+}
+
+.logoTitle {
+    font-family:$cool-font;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logoTitle a {
+    text-decoration: none;
+}
+
+nav {
+    flex-grow: 1;
+    padding-left: 24px;
+}
+
+.sectionTitle {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navList {
+    list-style: none;
+    font-size: 0;
+    width: 500px;
+}
+
+.navList a:hover {
+    text-decoration: underline;
+}
+
+.navListItem {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navListItem--unselected {
+    text-decoration: none;
+}
+
+.logOutIcon {
+    width: 40px;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+
+.logOutIcon img {
+    height: 25px;
+    width: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logOutIcon img:hover {
+    transform: scale(1.3);
+}
+
+.userIcon {
+    width: 40px;
+}
+
+.userIcon img {
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.userIcon img:hover {
+    transform: scale(1.3);
+}
+
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 2px solid $cool-light;
+    margin-bottom: 0px;
+}
+
+.tag {
+    border-style: solid;
+    border-width: 2px;
+    border-color: $cool-light;
+    border-radius: 20px;
+    text-align: center;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 7px;
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 14px;
+    font-style: normal;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tag a {
+    text-decoration: none;
+}
+
+.tag:hover {
+    background-color: $cool-light;
+    color: $cool-dark;
+}
+
+.tag:active {
+    transform: scale(0.9);
+}
+
+.standardText {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.formItem  {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.formItem--dark {
+    color: $cool-dark
+}
+
+main {
+    grid-area: main;
+    z-index: -1;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 40px;
+    padding-bottom: 16px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+}
+
+.categoryImg {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: transform .2s;
+}
+
+.categoryImg:hover {
+    transform: scale(1.5);
+}
+
+.categoryTitle {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.memeContainer {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid $cool-light;
+}
+
+.memeSeparator {
+    margin-bottom: 8px;
+    border-width: 2px;
+    border-color: $cool-light;
+}
+
+.memeImage {
+    width: 420px;
+    height: 420px;
+}
+
+.memePoints {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.memeTitle {
+    padding-bottom: 8px;
+}
+
+.memeComments {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.memeComment {
+    color: $cool-light;
+    font-family:$cool-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: lighter;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.memeCommentIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.memePointerContainer {
+    display: inline-block;
+}
+
+.meme {
+    position: relative;
+}
+
+.memePointer {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 100px;
+    padding-left: 12px;
+}
+
+.memePointerUp {
+    width: 16px;
+    height: 16px;
+    padding-bottom: 5px;
+}
+
+.memePointerDown {
+    padding-top: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+footer {
+    grid-area: footer;
+    padding-left: 16px;
+}
+
+.socialNetworks {
+    list-style:none;
+    font-family:$cool-font;
+    font-size: 20px;
+    font-style: normal;
 }
