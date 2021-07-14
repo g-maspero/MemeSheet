@@ -32,24 +32,24 @@
             <div class="logOutIcon"><img src="../images/log_out_icon.png" alt="Log Out" class="logOutIcon"></div>
         </div>
     </header>
-    <main>
-        <h1>Upload your meme!</h1>
-        <div class="container-fluid form-container">
+    <main id="work-form">
+        <h1>Work with us!!</h1>
+        <div class="container-fluid form-container form-container--rounded">
             <div class="row">
                 <div class="col-3">
                     <form>
                         <div class="mb-3">
-                            <label for="input-nombre" class="form-label">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="input-nombre" aria-describedby="emailHelp" placeholder="Juan Perez">
+                            <label for="input-nombre" class="form-label">Name and surname</label>
+                            <input type="text" class="form-control" id="input-nombre" aria-describedby="emailHelp" placeholder="John Doe">
                         </div>
                         <div class="mb-3">
                           <label for="input-email" class="form-label">E-mail</label>
                           <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="user@gmail.com">
                         </div>
                         <div class="mb-3">
-                            <label for="select-residencia" class="form-label">Lugar de residencia</label>
+                            <label for="select-residencia" class="form-label">Where do you live?</label>
                             <select class="form-select" aria-label="Default select example" id="select-residencia">
-                                <option selected>Elegí el país donde vivís</option>
+                                <option selected>Choose your country</option>
                                 <option value="1">Argentina</option>
                                 <option value="2">Chile</option>
                                 <option value="3">Uruguay</option>
@@ -59,9 +59,9 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="select-residencia" class="form-label">Rol</label>
+                            <label for="select-residencia" class="form-label">Role</label>
                             <select class="form-select" aria-label="Default select example" id="select-residencia">
-                                <option selected>Elegí tu rol</option>
+                                <option selected>Choose your profession</option>
                                 <option value="1">Software Engineer</option>
                                 <option value="2">QA Analyst</option>
                                 <option value="3">UX Design</option>
@@ -94,6 +94,12 @@
                         </div>
                     </form>
                 </div>
+                <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="teamwork">
+                            <img src="../images/teamwork.png" id="teamwork-img">
+                        </div>
+                    </div>
             </div>
         </div>
     </main>

@@ -53,6 +53,20 @@ h3 {
   font-family: "Source Sans Pro", sans-serif;
   color: #2b2d42; }
 
+#upload-form {
+  padding-right: 32px; }
+
+#work-form {
+  padding-right: 32px; }
+
+.teamwork {
+  padding-top: 46px;
+  padding-bottom: 32px; }
+
+#teamwork-img {
+  height: 300px;
+  width: 300px; }
+
 .form-container--rounded {
   border-radius: 4px; }
 
