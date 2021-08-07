@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="MemeSheet, Memes, Memefeed, Funny, Recreation">
-    <meta name="description" content="MemeSheet is the rightful place for your precious meme collection. Come to have some time off the boring life!">
+    <meta name="description"
+        content="MemeSheet is the rightful place for your precious meme collection. Come to have some time off the boring life!">
     <title>MemeSheet</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,26 +23,37 @@
     <div class="mainGrid">
         <header>
             <div class="mainHeader">
-                <!--Page Title-->
-                <div class='logo'>
-                    <img class="logoImg" src="images/logo.png">
-                    <h1 class="logoTitle">MemeSheet</h1>
-                </div>
                 <!--Nav Bar-->
-                <nav>
-                    <ul class="sectionTitle navList">
-                        <li class='navListItem'><a href="pages/feed.html" class="navListItem--unselected">Feed</a></li>
-                        <li class='navListItem'><a href="pages/fresh.html" class="navListItem--unselected">Fresh</a>
-                        </li>
-                        <li class='navListItem'><a href="pages/upload.html" class="navListItem--unselected">Upload</a>
-                        </li>
-                        <li class='navListItem'><a href="pages/work_with_us.html" class="navListItem--unselected">Work
-                                with us!</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dar">
+                    <div class="container-fluid">
+                        <div class='logo'>
+                            <img class="logoImg" src="images/logo.png">
+                            <h1 class="logoTitle">MemeSheet</h1>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/feed.html">Feed</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/fresh.html">Fresh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/upload.html">Upload</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/work_with_us.html" tabindex="-1"
+                                        aria-disabled="true">Work with us!</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-
-                <div class="userIcon"><img src="images/user_icon.png" alt="User"></div>
-                <div class="logOutIcon"><img src="images/log_out_icon.png" alt="Log Out" class="logOutIcon"></div>
             </div>
             <ul class="tagContainer">
                 <li class="memeTag memeTag--defaultTag"><a href="">Weekly highlights</a></li>
@@ -165,29 +178,33 @@
             <!--Carousel-->
             <div id="carouselExampleControls" class="carousel slide sections-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <a href=""><img src="images/cripto.jpeg" class="d-block w-100" alt="..."></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href=""><img src="images/dark.jpeg" class="d-block w-100" alt="..."></a>
-                  </div>
-                  <div class="carousel-item">
-                      <a href=""><img src="images/funny.jpeg" class="d-block w-100" alt="..."></a>
-                  </div>
+                    <div class="carousel-item active">
+                        <a href=""><img src="images/cripto.jpeg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href=""><img src="images/dark.jpeg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href=""><img src="images/funny.jpeg" class="d-block w-100" alt="..."></a>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </footer>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

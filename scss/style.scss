@@ -86,6 +86,12 @@ h3 {
     padding-bottom: 32px;
 }
 
+@media screen and (max-width: 768px) {
+    .teamwork {
+        display: none;
+    }
+}
+
 #teamwork-img {
     height: 300px;
     width: 300px;
@@ -153,6 +159,11 @@ nav {
     flex-grow: 1;
     padding-left: 24px;
 }
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
 
 .sectionTitle {
     color: $cool-light;
@@ -241,6 +252,7 @@ nav {
     padding-top: 3px;
     padding-bottom: 3px;
     margin-right: 7px;
+    margin-top: 5px;
     font-family:$cool-font;
     font-size: 14px;
     font-style: normal;
@@ -349,6 +361,31 @@ main {
     padding-bottom: 32px;
 }
 
+#work-with-us-img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (min-width: 500px) {
+    #work-with-us-img {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media screen and (min-width: 939px) {
+    #work-with-us-img {
+        width: 410px;
+        height: 410px;
+    }
+}
+
+/*
+.uploaded-meme {
+    display: none;
+}
+*/
+
 .memeSeparator {
     margin-bottom: 8px;
     border-width: 2px;
@@ -356,8 +393,15 @@ main {
 }
 
 .memeImage {
-    width: 420px;
-    height: 420px;
+    width: 210px;
+    height: 210px;
+}
+
+@media screen and (min-width: 500px) {
+    .memeImage {
+        width: 420px;
+        height: 420px;
+    }
 }
 
 .memePoints {
@@ -426,11 +470,5 @@ main {
 footer {
     grid-area: footer;
     padding-left: 16px;
-}
-
-.socialNetworks {
-    list-style:none;
-    font-family:$cool-font;
-    font-size: 20px;
-    font-style: normal;
+    padding-right: 16px;
 }
