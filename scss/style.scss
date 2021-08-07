@@ -48,6 +48,11 @@ h3 {
     font-weight: 400;
 }
 
+.navbar--cool-font {
+    font-family:$cool-font;
+    font-size: 18px;
+}
+
 .mainGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

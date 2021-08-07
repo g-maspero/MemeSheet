@@ -37,6 +37,10 @@ h3 {
   font-size: 22px;
   font-weight: 400; }
 
+.navbar--cool-font {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px; }
+
 .mainGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
